@@ -10640,7 +10640,6 @@ const swiper = () => {
   return Swiper;
 
 }));
-//# sourceMappingURL=swiper-bundle.js.map
 };
 
 export default swiper();
