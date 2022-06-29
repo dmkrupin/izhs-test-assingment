@@ -5,57 +5,625 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Описание проекта">
-    <title>ProjectName</title>
+    <title>ИЖС Маркет</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wdth,wght,XTRA@8..144,151,550,499;8..144,151,750,499;8..144,151,950,499&display=swap" rel="stylesheet">
+    <!-- styles -->
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <div class="container"></div>
+      <header class="header">
+        <div class="container">
+          <a class="header__logo" href="#">
+            <picture>
+              <!-- <source type="image/webp"
+              srcset="img/content/intro-desktop.webp 1x,
+              img/content/intro-desktop@2x.webp 2x"> -->
+              <!-- 1x: 19px, 2x: 38px -->
+              <img src="img/content/logo.png"
+              srcset="img/content/logo@2x.png 2x"
+              width="108" height="32" alt="Логотип ИЖС Маркет">
+            </picture>
+          </a>
+          <div class="header__links" style="display: none;">
+            <span class="header__tag tag">
+              Скоро запуск
+            </span>
+            <a class="header__button header__button--apple button" href="#" target="_blank">
+                <!-- <source type="image/webp"
+                srcset="img/content/intro-desktop.webp 1x,
+                img/content/intro-desktop@2x.webp 2x"> -->
+                <!-- 1x: 19px, 2x: 38px -->
+                <img src="img/content/apple-icon.png"
+                srcset="img/content/apple-icon@2x.png 2x"
+                width="19" height="23" alt="Логотип Apple Store">
+            </a>
+            <a class="header__button header__button--google button" href="#" target="_blank">
+                <!-- <source type="image/webp"
+                srcset="img/content/intro-desktop.webp 1x,
+                img/content/intro-desktop@2x.webp 2x"> -->
+                <!-- 1x: 20px, 2x: 40px -->
+                <img src="img/content/google-play-icon.png"
+                srcset="img/content/google-play-icon@2x.png 2x"
+                width="20" height="21" alt="Логотип Google Play">
+            </a>
+          </div>
+        </div>
       </header>
       <main>
-        <section class="intro">
-          <div class="container">
-            <h1>Тестовая страница.</h1>
-            <p>На данной странице показан пример модальных окон.</p>
-            <p>Перед началом разработки не забудте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
-            <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-            <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
+        <div class="container">
+          <div class="main-swiper swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="main-swiper__slide screen-1 swiper-slide">
+                <div class="screen-1__content">
+                  <h1 class="screen-1__title">Постройте дом<br> быстрее и&nbsp;легче<br> через приложение</h1>
+                  <div class="screen-1__links">
+                    <span class="screen-1__tag tag">
+                      Скоро запуск
+                    </span>
+                    <a class="screen-1__button screen-1__button--apple button button--disabled" href="#" target="_blank">
+                      <picture>
+                        <!-- <source type="image/webp"
+                        srcset="img/content/intro-desktop.webp 1x,
+                        img/content/intro-desktop@2x.webp 2x"> -->
+                        <!-- 1x: 19px, 2x: 38px -->
+                        <img src="img/content/apple-icon.png"
+                        srcset="img/content/apple-icon@2x.png 2x"
+                        width="29" height="35" alt="Логотип Apple Store">
+                      </picture>
+                      <p>
+                        <span>установить</span>
+                        <svg width="91" height="19" aria-label="Apple Store">
+                          <use xlink:href="img/sprite_auto.svg#app-store-text"></use>
+                        </svg>
+                      </p>
+
+                    </a>
+                    <a class="screen-1__button screen-1__button--google button button--disabled" href="#" target="_blank">
+                      <picture>
+                        <!-- <source type="image/webp"
+                        srcset="img/content/intro-desktop.webp 1x,
+                        img/content/intro-desktop@2x.webp 2x"> -->
+                        <!-- 1x: 20px, 2x: 40px -->
+                        <img src="img/content/google-play-icon.png"
+                        srcset="img/content/google-play-icon@2x.png 2x"
+                        width="30" height="32" alt="Логотип Google Play">
+                      </picture>
+                      <p>
+                        <span>установить</span>
+                        <svg width="106" height="21" aria-label="Apple Store">
+                          <use xlink:href="img/sprite_auto.svg#google-play-text"></use>
+                        </svg>
+                      </p>
+                    </a>
+                  </div>
+                </div>
+                <div class="screen-1__img">
+                  <picture>
+                    <!-- <source type="image/webp"
+                    srcset="img/content/intro-desktop.webp 1x,
+                    img/content/intro-desktop@2x.webp 2x"> -->
+                    <!-- 1x: 312px, 2x: 624px -->
+                    <img src="img/content/screen-1-phone.png"
+                    srcset="img/content/screen-1-phone@2x.png 2x"
+                    width="312" height="631" alt="Приложение ИЖС Маркет">
+                  </picture>
+                </div>
+                <a class="main-swiper__next" href>
+                  <svg width="13" height="8" aria-label="Следующий экран">
+                    <use xlink:href="img/sprite_auto.svg#arrow-down"></use>
+                  </svg>
+                  <span>Как это работает?</span>
+                </a>
+              </div>
+              <div class="main-swiper__slide screen-1 swiper-slide">
+                <div class="screen-1__content">
+                  <h1 class="screen-1__title">Постройте дом<br> быстрее и&nbsp;легче<br> через приложение</h1>
+                  <div class="screen-1__links">
+                    <span class="screen-1__tag tag">
+                      Скоро запуск
+                    </span>
+                    <a class="screen-1__button screen-1__button--apple button" href="#" target="_blank">
+                      <picture>
+                        <!-- <source type="image/webp"
+                        srcset="img/content/intro-desktop.webp 1x,
+                        img/content/intro-desktop@2x.webp 2x"> -->
+                        <!-- 1x: 19px, 2x: 38px -->
+                        <img src="img/content/apple-icon.png"
+                        srcset="img/content/apple-icon@2x.png 2x"
+                        width="29" height="35" alt="Логотип Apple Store">
+                      </picture>
+                      <p>
+                        <span>установить</span>
+                        <svg width="91" height="19" aria-label="Apple Store">
+                          <use xlink:href="img/sprite_auto.svg#app-store-text"></use>
+                        </svg>
+                      </p>
+
+                    </a>
+                    <a class="screen-1__button screen-1__button--google button" href="#" target="_blank">
+                      <picture>
+                        <!-- <source type="image/webp"
+                        srcset="img/content/intro-desktop.webp 1x,
+                        img/content/intro-desktop@2x.webp 2x"> -->
+                        <!-- 1x: 20px, 2x: 40px -->
+                        <img src="img/content/google-play-icon.png"
+                        srcset="img/content/google-play-icon@2x.png 2x"
+                        width="30" height="32" alt="Логотип Google Play">
+                      </picture>
+                      <p>
+                        <span>установить</span>
+                        <svg width="106" height="21" aria-label="Apple Store">
+                          <use xlink:href="img/sprite_auto.svg#google-play-text"></use>
+                        </svg>
+                      </p>
+                    </a>
+                  </div>
+                </div>
+                <div class="screen-1__img">
+                  <picture>
+                    <!-- <source type="image/webp"
+                    srcset="img/content/intro-desktop.webp 1x,
+                    img/content/intro-desktop@2x.webp 2x"> -->
+                    <!-- 1x: 312px, 2x: 624px -->
+                    <img src="img/content/screen-1-phone.png"
+                    srcset="img/content/screen-1-phone@2x.png 2x"
+                    width="312" height="631" alt="Приложение ИЖС Маркет">
+                  </picture>
+                </div>
+                <a class="main-swiper__next" href>
+                  <svg width="13" height="8" aria-label="Следующий экран">
+                    <use xlink:href="img/sprite_auto.svg#arrow-down"></use>
+                  </svg>
+                  <span>Как это работает?</span>
+                </a>
+              </div>
+              <div class="main-swiper__slide screen-1 swiper-slide">
+                <div class="screen-1__content">
+                  <h1 class="screen-1__title">Постройте дом<br> быстрее и&nbsp;легче<br> через приложение</h1>
+                  <div class="screen-1__links">
+                    <span class="screen-1__tag tag">
+                      Скоро запуск
+                    </span>
+                    <a class="screen-1__button screen-1__button--apple button button--disabled" href="#" target="_blank">
+                      <picture>
+                        <!-- <source type="image/webp"
+                        srcset="img/content/intro-desktop.webp 1x,
+                        img/content/intro-desktop@2x.webp 2x"> -->
+                        <!-- 1x: 19px, 2x: 38px -->
+                        <img src="img/content/apple-icon.png"
+                        srcset="img/content/apple-icon@2x.png 2x"
+                        width="29" height="35" alt="Логотип Apple Store">
+                      </picture>
+                      <p>
+                        <span>установить</span>
+                        <svg width="91" height="19" aria-label="Apple Store">
+                          <use xlink:href="img/sprite_auto.svg#app-store-text"></use>
+                        </svg>
+                      </p>
+
+                    </a>
+                    <a class="screen-1__button screen-1__button--google button button--disabled" href="#" target="_blank">
+                      <picture>
+                        <!-- <source type="image/webp"
+                        srcset="img/content/intro-desktop.webp 1x,
+                        img/content/intro-desktop@2x.webp 2x"> -->
+                        <!-- 1x: 20px, 2x: 40px -->
+                        <img src="img/content/google-play-icon.png"
+                        srcset="img/content/google-play-icon@2x.png 2x"
+                        width="30" height="32" alt="Логотип Google Play">
+                      </picture>
+                      <p>
+                        <span>установить</span>
+                        <svg width="106" height="21" aria-label="Apple Store">
+                          <use xlink:href="img/sprite_auto.svg#google-play-text"></use>
+                        </svg>
+                      </p>
+                    </a>
+                  </div>
+                </div>
+                <div class="screen-1__img">
+                  <picture>
+                    <!-- <source type="image/webp"
+                    srcset="img/content/intro-desktop.webp 1x,
+                    img/content/intro-desktop@2x.webp 2x"> -->
+                    <!-- 1x: 312px, 2x: 624px -->
+                    <img src="img/content/screen-1-phone.png"
+                    srcset="img/content/screen-1-phone@2x.png 2x"
+                    width="312" height="631" alt="Приложение ИЖС Маркет">
+                  </picture>
+                </div>
+                <a class="main-swiper__next" href>
+                  <svg width="13" height="8" aria-label="Следующий экран">
+                    <use xlink:href="img/sprite_auto.svg#arrow-down"></use>
+                  </svg>
+                  <span>Как это работает?</span>
+                </a>
+              </div>
+              <div class="main-swiper__slide screen-1 swiper-slide">
+                <div class="screen-1__content">
+                  <h1 class="screen-1__title">Постройте дом<br> быстрее и&nbsp;легче<br> через приложение</h1>
+                  <div class="screen-1__links">
+                    <span class="screen-1__tag tag">
+                      Скоро запуск
+                    </span>
+                    <a class="screen-1__button screen-1__button--apple button button--disabled" href="#" target="_blank">
+                      <picture>
+                        <!-- <source type="image/webp"
+                        srcset="img/content/intro-desktop.webp 1x,
+                        img/content/intro-desktop@2x.webp 2x"> -->
+                        <!-- 1x: 19px, 2x: 38px -->
+                        <img src="img/content/apple-icon.png"
+                        srcset="img/content/apple-icon@2x.png 2x"
+                        width="29" height="35" alt="Логотип Apple Store">
+                      </picture>
+                      <p>
+                        <span>установить</span>
+                        <svg width="91" height="19" aria-label="Apple Store">
+                          <use xlink:href="img/sprite_auto.svg#app-store-text"></use>
+                        </svg>
+                      </p>
+
+                    </a>
+                    <a class="screen-1__button screen-1__button--google button button--disabled" href="#" target="_blank">
+                      <picture>
+                        <!-- <source type="image/webp"
+                        srcset="img/content/intro-desktop.webp 1x,
+                        img/content/intro-desktop@2x.webp 2x"> -->
+                        <!-- 1x: 20px, 2x: 40px -->
+                        <img src="img/content/google-play-icon.png"
+                        srcset="img/content/google-play-icon@2x.png 2x"
+                        width="30" height="32" alt="Логотип Google Play">
+                      </picture>
+                      <p>
+                        <span>установить</span>
+                        <svg width="106" height="21" aria-label="Apple Store">
+                          <use xlink:href="img/sprite_auto.svg#google-play-text"></use>
+                        </svg>
+                      </p>
+                    </a>
+                  </div>
+                </div>
+                <div class="screen-1__img">
+                  <picture>
+                    <!-- <source type="image/webp"
+                    srcset="img/content/intro-desktop.webp 1x,
+                    img/content/intro-desktop@2x.webp 2x"> -->
+                    <!-- 1x: 312px, 2x: 624px -->
+                    <img src="img/content/screen-1-phone.png"
+                    srcset="img/content/screen-1-phone@2x.png 2x"
+                    width="312" height="631" alt="Приложение ИЖС Маркет">
+                  </picture>
+                </div>
+                <a class="main-swiper__next" href>
+                  <svg width="13" height="8" aria-label="Следующий экран">
+                    <use xlink:href="img/sprite_auto.svg#arrow-down"></use>
+                  </svg>
+                  <span>Как это работает?</span>
+                </a>
+              </div>
+              <div class="main-swiper__slide screen-1 swiper-slide">
+                <div class="screen-1__content">
+                  <h1 class="screen-1__title">Постройте дом<br> быстрее и&nbsp;легче<br> через приложение</h1>
+                  <div class="screen-1__links">
+                    <span class="screen-1__tag tag">
+                      Скоро запуск
+                    </span>
+                    <a class="screen-1__button screen-1__button--apple button button--disabled" href="#" target="_blank">
+                      <picture>
+                        <!-- <source type="image/webp"
+                        srcset="img/content/intro-desktop.webp 1x,
+                        img/content/intro-desktop@2x.webp 2x"> -->
+                        <!-- 1x: 19px, 2x: 38px -->
+                        <img src="img/content/apple-icon.png"
+                        srcset="img/content/apple-icon@2x.png 2x"
+                        width="29" height="35" alt="Логотип Apple Store">
+                      </picture>
+                      <p>
+                        <span>установить</span>
+                        <svg width="91" height="19" aria-label="Apple Store">
+                          <use xlink:href="img/sprite_auto.svg#app-store-text"></use>
+                        </svg>
+                      </p>
+
+                    </a>
+                    <a class="screen-1__button screen-1__button--google button button--disabled" href="#" target="_blank">
+                      <picture>
+                        <!-- <source type="image/webp"
+                        srcset="img/content/intro-desktop.webp 1x,
+                        img/content/intro-desktop@2x.webp 2x"> -->
+                        <!-- 1x: 20px, 2x: 40px -->
+                        <img src="img/content/google-play-icon.png"
+                        srcset="img/content/google-play-icon@2x.png 2x"
+                        width="30" height="32" alt="Логотип Google Play">
+                      </picture>
+                      <p>
+                        <span>установить</span>
+                        <svg width="106" height="21" aria-label="Apple Store">
+                          <use xlink:href="img/sprite_auto.svg#google-play-text"></use>
+                        </svg>
+                      </p>
+                    </a>
+                  </div>
+                </div>
+                <div class="screen-1__img">
+                  <picture>
+                    <!-- <source type="image/webp"
+                    srcset="img/content/intro-desktop.webp 1x,
+                    img/content/intro-desktop@2x.webp 2x"> -->
+                    <!-- 1x: 312px, 2x: 624px -->
+                    <img src="img/content/screen-1-phone.png"
+                    srcset="img/content/screen-1-phone@2x.png 2x"
+                    width="312" height="631" alt="Приложение ИЖС Маркет">
+                  </picture>
+                </div>
+                <a class="main-swiper__next" href>
+                  <svg width="13" height="8" aria-label="Следующий экран">
+                    <use xlink:href="img/sprite_auto.svg#arrow-down"></use>
+                  </svg>
+                  <span>Как это работает?</span>
+                </a>
+              </div>
+              <div class="main-swiper__slide screen-1 swiper-slide">
+                <div class="screen-1__content">
+                  <h1 class="screen-1__title">Постройте дом<br> быстрее и&nbsp;легче<br> через приложение</h1>
+                  <div class="screen-1__links">
+                    <span class="screen-1__tag tag">
+                      Скоро запуск
+                    </span>
+                    <a class="screen-1__button screen-1__button--apple button button--disabled" href="#" target="_blank">
+                      <picture>
+                        <!-- <source type="image/webp"
+                        srcset="img/content/intro-desktop.webp 1x,
+                        img/content/intro-desktop@2x.webp 2x"> -->
+                        <!-- 1x: 19px, 2x: 38px -->
+                        <img src="img/content/apple-icon.png"
+                        srcset="img/content/apple-icon@2x.png 2x"
+                        width="29" height="35" alt="Логотип Apple Store">
+                      </picture>
+                      <p>
+                        <span>установить</span>
+                        <svg width="91" height="19" aria-label="Apple Store">
+                          <use xlink:href="img/sprite_auto.svg#app-store-text"></use>
+                        </svg>
+                      </p>
+
+                    </a>
+                    <a class="screen-1__button screen-1__button--google button button--disabled" href="#" target="_blank">
+                      <picture>
+                        <!-- <source type="image/webp"
+                        srcset="img/content/intro-desktop.webp 1x,
+                        img/content/intro-desktop@2x.webp 2x"> -->
+                        <!-- 1x: 20px, 2x: 40px -->
+                        <img src="img/content/google-play-icon.png"
+                        srcset="img/content/google-play-icon@2x.png 2x"
+                        width="30" height="32" alt="Логотип Google Play">
+                      </picture>
+                      <p>
+                        <span>установить</span>
+                        <svg width="106" height="21" aria-label="Apple Store">
+                          <use xlink:href="img/sprite_auto.svg#google-play-text"></use>
+                        </svg>
+                      </p>
+                    </a>
+                  </div>
+                </div>
+                <div class="screen-1__img">
+                  <picture>
+                    <!-- <source type="image/webp"
+                    srcset="img/content/intro-desktop.webp 1x,
+                    img/content/intro-desktop@2x.webp 2x"> -->
+                    <!-- 1x: 312px, 2x: 624px -->
+                    <img src="img/content/screen-1-phone.png"
+                    srcset="img/content/screen-1-phone@2x.png 2x"
+                    width="312" height="631" alt="Приложение ИЖС Маркет">
+                  </picture>
+                </div>
+                <a class="main-swiper__next" href>
+                  <svg width="13" height="8" aria-label="Следующий экран">
+                    <use xlink:href="img/sprite_auto.svg#arrow-down"></use>
+                  </svg>
+                  <span>Как это работает?</span>
+                </a>
+              </div>
+              <div class="main-swiper__slide screen-1 swiper-slide">
+                <div class="screen-1__content">
+                  <h1 class="screen-1__title">Постройте дом<br> быстрее и&nbsp;легче<br> через приложение</h1>
+                  <div class="screen-1__links">
+                    <span class="screen-1__tag tag">
+                      Скоро запуск
+                    </span>
+                    <a class="screen-1__button screen-1__button--apple button button--disabled" href="#" target="_blank">
+                      <picture>
+                        <!-- <source type="image/webp"
+                        srcset="img/content/intro-desktop.webp 1x,
+                        img/content/intro-desktop@2x.webp 2x"> -->
+                        <!-- 1x: 19px, 2x: 38px -->
+                        <img src="img/content/apple-icon.png"
+                        srcset="img/content/apple-icon@2x.png 2x"
+                        width="29" height="35" alt="Логотип Apple Store">
+                      </picture>
+                      <p>
+                        <span>установить</span>
+                        <svg width="91" height="19" aria-label="Apple Store">
+                          <use xlink:href="img/sprite_auto.svg#app-store-text"></use>
+                        </svg>
+                      </p>
+
+                    </a>
+                    <a class="screen-1__button screen-1__button--google button button--disabled" href="#" target="_blank">
+                      <picture>
+                        <!-- <source type="image/webp"
+                        srcset="img/content/intro-desktop.webp 1x,
+                        img/content/intro-desktop@2x.webp 2x"> -->
+                        <!-- 1x: 20px, 2x: 40px -->
+                        <img src="img/content/google-play-icon.png"
+                        srcset="img/content/google-play-icon@2x.png 2x"
+                        width="30" height="32" alt="Логотип Google Play">
+                      </picture>
+                      <p>
+                        <span>установить</span>
+                        <svg width="106" height="21" aria-label="Apple Store">
+                          <use xlink:href="img/sprite_auto.svg#google-play-text"></use>
+                        </svg>
+                      </p>
+                    </a>
+                  </div>
+                </div>
+                <div class="screen-1__img">
+                  <picture>
+                    <!-- <source type="image/webp"
+                    srcset="img/content/intro-desktop.webp 1x,
+                    img/content/intro-desktop@2x.webp 2x"> -->
+                    <!-- 1x: 312px, 2x: 624px -->
+                    <img src="img/content/screen-1-phone.png"
+                    srcset="img/content/screen-1-phone@2x.png 2x"
+                    width="312" height="631" alt="Приложение ИЖС Маркет">
+                  </picture>
+                </div>
+                <a class="main-swiper__next" href>
+                  <svg width="13" height="8" aria-label="Следующий экран">
+                    <use xlink:href="img/sprite_auto.svg#arrow-down"></use>
+                  </svg>
+                  <span>Как это работает?</span>
+                </a>
+              </div>
+              <div class="main-swiper__slide screen-1 swiper-slide">
+                <div class="screen-1__content">
+                  <h1 class="screen-1__title">Постройте дом<br> быстрее и&nbsp;легче<br> через приложение</h1>
+                  <div class="screen-1__links">
+                    <span class="screen-1__tag tag">
+                      Скоро запуск
+                    </span>
+                    <a class="screen-1__button screen-1__button--apple button button--disabled" href="#" target="_blank">
+                      <picture>
+                        <!-- <source type="image/webp"
+                        srcset="img/content/intro-desktop.webp 1x,
+                        img/content/intro-desktop@2x.webp 2x"> -->
+                        <!-- 1x: 19px, 2x: 38px -->
+                        <img src="img/content/apple-icon.png"
+                        srcset="img/content/apple-icon@2x.png 2x"
+                        width="29" height="35" alt="Логотип Apple Store">
+                      </picture>
+                      <p>
+                        <span>установить</span>
+                        <svg width="91" height="19" aria-label="Apple Store">
+                          <use xlink:href="img/sprite_auto.svg#app-store-text"></use>
+                        </svg>
+                      </p>
+
+                    </a>
+                    <a class="screen-1__button screen-1__button--google button button--disabled" href="#" target="_blank">
+                      <picture>
+                        <!-- <source type="image/webp"
+                        srcset="img/content/intro-desktop.webp 1x,
+                        img/content/intro-desktop@2x.webp 2x"> -->
+                        <!-- 1x: 20px, 2x: 40px -->
+                        <img src="img/content/google-play-icon.png"
+                        srcset="img/content/google-play-icon@2x.png 2x"
+                        width="30" height="32" alt="Логотип Google Play">
+                      </picture>
+                      <p>
+                        <span>установить</span>
+                        <svg width="106" height="21" aria-label="Apple Store">
+                          <use xlink:href="img/sprite_auto.svg#google-play-text"></use>
+                        </svg>
+                      </p>
+                    </a>
+                  </div>
+                </div>
+                <div class="screen-1__img">
+                  <picture>
+                    <!-- <source type="image/webp"
+                    srcset="img/content/intro-desktop.webp 1x,
+                    img/content/intro-desktop@2x.webp 2x"> -->
+                    <!-- 1x: 312px, 2x: 624px -->
+                    <img src="img/content/screen-1-phone.png"
+                    srcset="img/content/screen-1-phone@2x.png 2x"
+                    width="312" height="631" alt="Приложение ИЖС Маркет">
+                  </picture>
+                </div>
+                <a class="main-swiper__next" href>
+                  <svg width="13" height="8" aria-label="Следующий экран">
+                    <use xlink:href="img/sprite_auto.svg#arrow-down"></use>
+                  </svg>
+                  <span>Как это работает?</span>
+                </a>
+              </div>
+              <div class="main-swiper__slide screen-1 swiper-slide">
+                <div class="screen-1__content">
+                  <h1 class="screen-1__title">Постройте дом<br> быстрее и&nbsp;легче<br> через приложение</h1>
+                  <div class="screen-1__links">
+                    <span class="screen-1__tag tag">
+                      Скоро запуск
+                    </span>
+                    <a class="screen-1__button screen-1__button--apple button button--disabled" href="#" target="_blank">
+                      <picture>
+                        <!-- <source type="image/webp"
+                        srcset="img/content/intro-desktop.webp 1x,
+                        img/content/intro-desktop@2x.webp 2x"> -->
+                        <!-- 1x: 19px, 2x: 38px -->
+                        <img src="img/content/apple-icon.png"
+                        srcset="img/content/apple-icon@2x.png 2x"
+                        width="29" height="35" alt="Логотип Apple Store">
+                      </picture>
+                      <p>
+                        <span>установить</span>
+                        <svg width="91" height="19" aria-label="Apple Store">
+                          <use xlink:href="img/sprite_auto.svg#app-store-text"></use>
+                        </svg>
+                      </p>
+
+                    </a>
+                    <a class="screen-1__button screen-1__button--google button button--disabled" href="#" target="_blank">
+                      <picture>
+                        <!-- <source type="image/webp"
+                        srcset="img/content/intro-desktop.webp 1x,
+                        img/content/intro-desktop@2x.webp 2x"> -->
+                        <!-- 1x: 20px, 2x: 40px -->
+                        <img src="img/content/google-play-icon.png"
+                        srcset="img/content/google-play-icon@2x.png 2x"
+                        width="30" height="32" alt="Логотип Google Play">
+                      </picture>
+                      <p>
+                        <span>установить</span>
+                        <svg width="106" height="21" aria-label="Apple Store">
+                          <use xlink:href="img/sprite_auto.svg#google-play-text"></use>
+                        </svg>
+                      </p>
+                    </a>
+                  </div>
+                </div>
+                <div class="screen-1__img">
+                  <picture>
+                    <!-- <source type="image/webp"
+                    srcset="img/content/intro-desktop.webp 1x,
+                    img/content/intro-desktop@2x.webp 2x"> -->
+                    <!-- 1x: 312px, 2x: 624px -->
+                    <img src="img/content/screen-1-phone.png"
+                    srcset="img/content/screen-1-phone@2x.png 2x"
+                    width="312" height="631" alt="Приложение ИЖС Маркет">
+                  </picture>
+                </div>
+                <!-- <a class="main-swiper__next" href>
+                  <svg width="13" height="8" aria-label="Следующий экран">
+                    <use xlink:href="img/sprite_auto.svg#arrow-down"></use>
+                  </svg>
+                  <span>Как это работает?</span>
+                </a> -->
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="main-swiper__pagination swiper-pagination"></div>
           </div>
-        </section>
+        </div>
       </main>
-      <footer>
-        <div class="container"></div>
-      </footer>
-    </div>
-
-    <!-- Модалки -->
-    <div class="modal modal--preload" data-modal="feedback">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite_auto.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite_auto.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
     </div>
 
     <script src="js/vendor.min.js"></script>

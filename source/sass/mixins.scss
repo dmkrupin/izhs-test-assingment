@@ -42,6 +42,11 @@
   }
 }
 
+@mixin text-variation {
+  font-stretch: 150%;
+  font-variation-settings: 'GRAD' 0, 'slnt' 0, 'XTRA' 499, 'XOPQ' 96, 'YOPQ' 79, 'YTLC' 514, 'YTUC' 712, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738;
+}
+
 // Mobile first
 
 // @mixin vp-375 {

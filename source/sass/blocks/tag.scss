@@ -1,0 +1,14 @@
+.tag {
+  display: inline-flex;
+  margin: 0;
+  padding: 6px 16px;
+
+  background-color: $color-safety-orange;
+  border: none;
+  border-radius: 8px;
+
+  color: $color-default-white;
+  font: 750 14px/20px $ff-roboto-flex;
+  @include text-variation;
+  user-select: none;
+}

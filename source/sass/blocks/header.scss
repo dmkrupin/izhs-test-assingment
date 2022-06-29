@@ -1,0 +1,46 @@
+.header {
+  position: fixed;
+  top: 48px;
+  left: 0;
+  right: 0;
+  min-height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  z-index: 10;
+
+  background-color: $color-transparent;
+  // background-color: tomato;
+}
+
+.header__links {
+  height: 100%;
+  margin-left: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.header__tag {
+  margin-right: 8px;
+}
+
+.header__button {
+  align-self: stretch;
+  margin-left: 8px;
+
+  &--apple {
+    img {
+      width: 19px;
+      height: 23px;
+    }
+  }
+
+  &--google {
+    img {
+      width: 20px;
+      height: 21px;
+    }
+  }
+}
