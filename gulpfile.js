@@ -32,10 +32,10 @@ const css = () => {
       .pipe(server.stream());
 };
 
-gulp.task('js', async function() {
+const js = () => {
   return gulp.src(['source/js/**/*.js'])
         .pipe(gulp.dest('build/js/'))
-});
+};
 
 const svgo = () => {
   return gulp.src('source/img/**/*.{svg}')
