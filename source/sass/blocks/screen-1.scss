@@ -4,6 +4,7 @@
 
 .screen-1__content {
   grid-column: 1 / 13;
+  grid-row: 1 / 2;
   margin-top: 260px;
 }
 
@@ -32,6 +33,7 @@
 
 .screen-1__button {
   margin-right: 24px;
+  margin-bottom: 15px;
   display: inline-flex;
   align-items: center;
   justify-content: flex-start;
@@ -77,13 +79,18 @@
 .screen-1__img {
   align-self: center;
   grid-column: 14 / 21;
+  grid-row: 1 / 2;
   position: relative;
-  top: 36px;
+  top: 23px;
   right: -24px;
+  padding-bottom: 202%;
 
   img {
-    width: 312px;
-    height: 631px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     object-fit: contain;
   }
 }

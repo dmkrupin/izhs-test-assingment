@@ -14,6 +14,7 @@
 .main-swiper__slide {
   display: grid;
   grid-template-columns: repeat(24, 1fr);
+  grid-template-rows: 1fr 50px;
   column-gap: 24px;
   // background-color: teal;
 }
@@ -21,7 +22,7 @@
 .main-swiper__pagination.swiper-pagination-bullets {
   position: absolute;
   right: 0;
-  top: 46.4%;
+  top: 52.1%;
   transform: translateY(-50%);
   z-index: 5;
 
@@ -73,7 +74,8 @@
 
 .main-swiper__next {
   grid-column: 1 / -1;
-  min-height: 100px;
+  grid-row: -2 / -1;
+  min-height: 50px;
 
   display: flex;
   justify-content: center;
